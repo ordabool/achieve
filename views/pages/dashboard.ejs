@@ -6,9 +6,11 @@
   <%- include('../includes/require-stylesheets'); %>
 </head>
 <body>
-  <%- include('../includes/navbar'); %>
+  <%- include('../includes/navbar', {page: "dashboard"}); %>
 
-  <app-root></app-root>
+  <div class="container">
+    <create-achievement></create-achievement>
+  </div>
 
   <%- include('../includes/require-javascripts'); %>
 </body>
