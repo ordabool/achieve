@@ -11,6 +11,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MainJumbotronComponent } from './components/main-jumbotron/main-jumbotron.component';
 import { ExploreComponent } from './pages/explore/explore.component';
+import { AchievementsByGenreComponent } from './components/achievements-by-genre/achievements-by-genre.component';
+import { AchievementBoxComponent } from './components/achievement-box/achievement-box.component';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { ExploreComponent } from './pages/explore/explore.component';
     DashboardComponent,
     MainJumbotronComponent,
     ExploreComponent,
+    AchievementsByGenreComponent,
+    AchievementBoxComponent,
   ],
   imports: [
     BrowserModule,
