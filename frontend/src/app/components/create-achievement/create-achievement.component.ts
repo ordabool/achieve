@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'create-achievement',
+  selector: 'app-create-achievement',
   templateUrl: './create-achievement.component.html',
   styleUrls: ['./create-achievement.component.css']
 })
