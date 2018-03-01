@@ -10,6 +10,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MainJumbotronComponent } from './components/main-jumbotron/main-jumbotron.component';
+import { ExploreComponent } from './pages/explore/explore.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { MainJumbotronComponent } from './components/main-jumbotron/main-jumbotr
     HomeComponent,
     DashboardComponent,
     MainJumbotronComponent,
+    ExploreComponent,
   ],
   imports: [
     BrowserModule,

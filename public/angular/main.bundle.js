@@ -33,10 +33,12 @@ var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
 var home_component_1 = __webpack_require__("./src/app/pages/home/home.component.ts");
 var dashboard_component_1 = __webpack_require__("./src/app/pages/dashboard/dashboard.component.ts");
+var explore_component_1 = __webpack_require__("./src/app/pages/explore/explore.component.ts");
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: home_component_1.HomeComponent },
-    { path: 'dashboard', component: dashboard_component_1.DashboardComponent }
+    { path: 'dashboard', component: dashboard_component_1.DashboardComponent },
+    { path: 'explore', component: explore_component_1.ExploreComponent },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -125,6 +127,7 @@ var app_routing_module_1 = __webpack_require__("./src/app/app-routing.module.ts"
 var home_component_1 = __webpack_require__("./src/app/pages/home/home.component.ts");
 var dashboard_component_1 = __webpack_require__("./src/app/pages/dashboard/dashboard.component.ts");
 var main_jumbotron_component_1 = __webpack_require__("./src/app/components/main-jumbotron/main-jumbotron.component.ts");
+var explore_component_1 = __webpack_require__("./src/app/pages/explore/explore.component.ts");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -137,6 +140,7 @@ var AppModule = /** @class */ (function () {
                 home_component_1.HomeComponent,
                 dashboard_component_1.DashboardComponent,
                 main_jumbotron_component_1.MainJumbotronComponent,
+                explore_component_1.ExploreComponent,
             ],
             imports: [
                 platform_browser_1.BrowserModule,
@@ -349,6 +353,56 @@ var DashboardComponent = /** @class */ (function () {
     return DashboardComponent;
 }());
 exports.DashboardComponent = DashboardComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/pages/explore/explore.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/pages/explore/explore.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <p>\n    Explore page works!\n  </p>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/explore/explore.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var ExploreComponent = /** @class */ (function () {
+    function ExploreComponent() {
+    }
+    ExploreComponent.prototype.ngOnInit = function () {
+    };
+    ExploreComponent = __decorate([
+        core_1.Component({
+            selector: 'app-explore',
+            template: __webpack_require__("./src/app/pages/explore/explore.component.html"),
+            styles: [__webpack_require__("./src/app/pages/explore/explore.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ExploreComponent);
+    return ExploreComponent;
+}());
+exports.ExploreComponent = ExploreComponent;
 
 
 /***/ }),
