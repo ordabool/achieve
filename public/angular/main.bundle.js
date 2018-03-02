@@ -60,17 +60,17 @@ exports.AppRoutingModule = AppRoutingModule;
 
 /***/ }),
 
-/***/ "./src/app/app.component.css":
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<app-navbar></app-navbar>\n<router-outlet></router-outlet>"
+
+/***/ }),
+
+/***/ "./src/app/app.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ""
 
 /***/ }),
 
@@ -95,7 +95,7 @@ var AppComponent = /** @class */ (function () {
         core_1.Component({
             selector: 'app-root',
             template: __webpack_require__("./src/app/app.component.html"),
-            styles: [__webpack_require__("./src/app/app.component.css")]
+            styles: [__webpack_require__("./src/app/app.component.scss")]
         })
     ], AppComponent);
     return AppComponent;
@@ -161,17 +161,17 @@ exports.AppModule = AppModule;
 
 /***/ }),
 
-/***/ "./src/app/components/achievement-box/achievement-box.component.css":
-/***/ (function(module, exports) {
-
-module.exports = " .achievement-box {\n   margin: 15px;\n }\n"
-
-/***/ }),
-
 /***/ "./src/app/components/achievement-box/achievement-box.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"card achievement-box\" style=\"width: 18rem;\">\n  <img class=\"card-img-top\" src=\"http://via.placeholder.com/286x180\" alt=\"Card image cap\">\n  <div class=\"card-body\">\n    <a href=\"#\"><h5 class=\"card-title\">Title</h5></a>\n    <p class=\"card-text\">Long description about the achievement</p>\n    <footer class=\"blockquote-footer\">Achieved on xx/xx/xxxx with\n      @xxxx</footer>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/achievement-box/achievement-box.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ".achievement-box {\n  margin: 15px; }\n"
 
 /***/ }),
 
@@ -200,7 +200,7 @@ var AchievementBoxComponent = /** @class */ (function () {
         core_1.Component({
             selector: 'app-achievement-box',
             template: __webpack_require__("./src/app/components/achievement-box/achievement-box.component.html"),
-            styles: [__webpack_require__("./src/app/components/achievement-box/achievement-box.component.css")]
+            styles: [__webpack_require__("./src/app/components/achievement-box/achievement-box.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], AchievementBoxComponent);
@@ -211,17 +211,17 @@ exports.AchievementBoxComponent = AchievementBoxComponent;
 
 /***/ }),
 
-/***/ "./src/app/components/achievements-by-genre/achievements-by-genre.component.css":
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
 /***/ "./src/app/components/achievements-by-genre/achievements-by-genre.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<h4>Genre Name:</h4>\n<div class=\"row\">\n  <app-achievement-box></app-achievement-box>\n  <app-achievement-box></app-achievement-box>\n  <app-achievement-box></app-achievement-box>\n</div>\n<hr class=\"my-4\">\n"
+
+/***/ }),
+
+/***/ "./src/app/components/achievements-by-genre/achievements-by-genre.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ""
 
 /***/ }),
 
@@ -250,7 +250,7 @@ var AchievementsByGenreComponent = /** @class */ (function () {
         core_1.Component({
             selector: 'app-achievements-by-genre',
             template: __webpack_require__("./src/app/components/achievements-by-genre/achievements-by-genre.component.html"),
-            styles: [__webpack_require__("./src/app/components/achievements-by-genre/achievements-by-genre.component.css")]
+            styles: [__webpack_require__("./src/app/components/achievements-by-genre/achievements-by-genre.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], AchievementsByGenreComponent);
@@ -261,17 +261,17 @@ exports.AchievementsByGenreComponent = AchievementsByGenreComponent;
 
 /***/ }),
 
-/***/ "./src/app/components/create-achievement/create-achievement.component.css":
-/***/ (function(module, exports) {
-
-module.exports = ".create-achievement {\n    width: 70%;\n    margin-right: auto;\n    margin-left: auto;\n}"
-
-/***/ }),
-
 /***/ "./src/app/components/create-achievement/create-achievement.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"create-achievement\">\n\n  <h2 class=\"text-center display-4\">Create an achievement!</h2>\n  <br>\n\n  <form action=\"\">\n    <div class=\"form-group\">\n      <label for=\"achievement-title\">Title</label>\n      <input type=\"text\" class=\"form-control form-control-lg\" id=\"achievement-title\" placeholder=\"Title\">\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"achievement-date\">Achieved at</label>\n      <input type=\"date\" class=\"form-control\" id=\"achievement-date\" placeholder=\"Achieved at\">\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"achievement-members\">Achieved with</label>\n      <input type=\"text\" class=\"form-control\" id=\"achievement-members\" placeholder=\"Use @ to tag co-achievers!\">\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"achievement-members\">My story</label>\n      <textarea class=\"form-control\" id=\"achievement-members\" placeholder=\"Please share the steps you took in order to help fellow achievers around the world!\"\n        rows=\"3\"></textarea>\n    </div>\n    <div class=\"custom-file\">\n      <input type=\"file\" class=\"custom-file-input\" id=\"achievement-image\">\n      <label class=\"custom-file-label\" for=\"achievement-image\">Upload Image</label>\n    </div>\n    <br><br>\n\n    <div class=\"form-row text-center\">\n      <div class=\"form-check form-check-inline\">\n        <input type=\"radio\" class=\"form-check-input\" id=\"achievement-completed\" name=\"achievement-status\">\n        <label class=\"form-check-label\" for=\"achievement-completed\">Completed achievement</label>\n      </div>\n      <div class=\"form-check form-check-inline\">\n        <input type=\"radio\" class=\"form-check-input\" id=\"achievement-in-progress\" name=\"achievement-status\">\n        <label class=\"form-check-label\" for=\"achievement-in-progress\">In progress achievement</label>\n      </div>\n    </div>\n    <br>\n\n    <div class=\"text-center\">\n      <input type=\"submit\" class=\"btn btn-danger btn-lg\" value=\"Cancel\">\n      <input type=\"submit\" class=\"btn btn-primary btn-lg\" value=\"Submit\">\n    </div>\n  </form>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/create-achievement/create-achievement.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ".create-achievement {\n  width: 70%;\n  margin-right: auto;\n  margin-left: auto; }\n"
 
 /***/ }),
 
@@ -300,7 +300,7 @@ var CreateAchievementComponent = /** @class */ (function () {
         core_1.Component({
             selector: 'app-create-achievement',
             template: __webpack_require__("./src/app/components/create-achievement/create-achievement.component.html"),
-            styles: [__webpack_require__("./src/app/components/create-achievement/create-achievement.component.css")]
+            styles: [__webpack_require__("./src/app/components/create-achievement/create-achievement.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], CreateAchievementComponent);
@@ -311,17 +311,17 @@ exports.CreateAchievementComponent = CreateAchievementComponent;
 
 /***/ }),
 
-/***/ "./src/app/components/main-jumbotron/main-jumbotron.component.css":
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
 /***/ "./src/app/components/main-jumbotron/main-jumbotron.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"jumbotron text-center\">\n  <h1 class=\"display-4\">Achieve</h1>\n  <p class=\"lead\">Welcome to Achieve. Ready to make your dreams a reality?</p>\n  <hr class=\"my-4\">\n  <p class=\"lead\">\n    <a routerLink=\"/sign-in\" class=\"btn btn-primary btn-lg\">Sign In</a>\n    <a routerLink=\"/register\" class=\"btn btn-success btn-lg\">Register</a>\n  </p>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/main-jumbotron/main-jumbotron.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ""
 
 /***/ }),
 
@@ -350,7 +350,7 @@ var MainJumbotronComponent = /** @class */ (function () {
         core_1.Component({
             selector: 'app-main-jumbotron',
             template: __webpack_require__("./src/app/components/main-jumbotron/main-jumbotron.component.html"),
-            styles: [__webpack_require__("./src/app/components/main-jumbotron/main-jumbotron.component.css")]
+            styles: [__webpack_require__("./src/app/components/main-jumbotron/main-jumbotron.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], MainJumbotronComponent);
@@ -361,17 +361,17 @@ exports.MainJumbotronComponent = MainJumbotronComponent;
 
 /***/ }),
 
-/***/ "./src/app/components/navbar/navbar.component.css":
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
 /***/ "./src/app/components/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<header>\n  <!-- Fixed navbar -->\n  <nav class=\"navbar navbar-expand-md navbar-dark fixed-top bg-dark\">\n    <a class=\"navbar-brand\" href=\"/home\">Achieve</a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\n      <ul class=\"navbar-nav mr-auto\">\n        <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n          <a class=\"nav-link\" routerLink=\"/home\">Home<span class=\"sr-only\">(current)</span></a>\n        </li>\n        <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n          <a class=\"nav-link\" routerLink=\"/dashboard\">Dashboard</a>\n        </li>\n        <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n          <a class=\"nav-link\" routerLink=\"/explore\">Explore</a>\n        </li>\n      </ul>\n      <form class=\"form-inline mt-2 mt-md-0\">\n        <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\">\n        <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\n      </form>\n    </div>\n  </nav>\n</header>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/navbar/navbar.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ""
 
 /***/ }),
 
@@ -400,7 +400,7 @@ var NavbarComponent = /** @class */ (function () {
         core_1.Component({
             selector: 'app-navbar',
             template: __webpack_require__("./src/app/components/navbar/navbar.component.html"),
-            styles: [__webpack_require__("./src/app/components/navbar/navbar.component.css")]
+            styles: [__webpack_require__("./src/app/components/navbar/navbar.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], NavbarComponent);
@@ -411,17 +411,17 @@ exports.NavbarComponent = NavbarComponent;
 
 /***/ }),
 
-/***/ "./src/app/pages/dashboard/dashboard.component.css":
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
 /***/ "./src/app/pages/dashboard/dashboard.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\n  <app-create-achievement></app-create-achievement>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/dashboard/dashboard.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ""
 
 /***/ }),
 
@@ -450,7 +450,7 @@ var DashboardComponent = /** @class */ (function () {
         core_1.Component({
             selector: 'app-dashboard',
             template: __webpack_require__("./src/app/pages/dashboard/dashboard.component.html"),
-            styles: [__webpack_require__("./src/app/pages/dashboard/dashboard.component.css")]
+            styles: [__webpack_require__("./src/app/pages/dashboard/dashboard.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], DashboardComponent);
@@ -461,17 +461,17 @@ exports.DashboardComponent = DashboardComponent;
 
 /***/ }),
 
-/***/ "./src/app/pages/explore/explore.component.css":
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
 /***/ "./src/app/pages/explore/explore.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\n  <h2 class=\"text-center display-4\">Explore Achievements!</h2>\n  <app-achievements-by-genre></app-achievements-by-genre>\n  <app-achievements-by-genre></app-achievements-by-genre>\n  <app-achievements-by-genre></app-achievements-by-genre>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/explore/explore.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ""
 
 /***/ }),
 
@@ -500,7 +500,7 @@ var ExploreComponent = /** @class */ (function () {
         core_1.Component({
             selector: 'app-explore',
             template: __webpack_require__("./src/app/pages/explore/explore.component.html"),
-            styles: [__webpack_require__("./src/app/pages/explore/explore.component.css")]
+            styles: [__webpack_require__("./src/app/pages/explore/explore.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], ExploreComponent);
@@ -511,17 +511,17 @@ exports.ExploreComponent = ExploreComponent;
 
 /***/ }),
 
-/***/ "./src/app/pages/home/home.component.css":
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
 /***/ "./src/app/pages/home/home.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\n  <app-main-jumbotron></app-main-jumbotron>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/home/home.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ""
 
 /***/ }),
 
@@ -550,7 +550,7 @@ var HomeComponent = /** @class */ (function () {
         core_1.Component({
             selector: 'app-home',
             template: __webpack_require__("./src/app/pages/home/home.component.html"),
-            styles: [__webpack_require__("./src/app/pages/home/home.component.css")]
+            styles: [__webpack_require__("./src/app/pages/home/home.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], HomeComponent);
