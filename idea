@@ -1,0 +1,53 @@
+What is Achieve? 
+
+In it's SVP, Achieve's goal is to help people achieve their dreams, wishes and
+all the things they never succeded to achieve themselves.
+
+Achieve aims to do so by offering the following tools:
+
+- People around you are constantly sharing achievements they did, with an
+  explained description about their struggles in the road to achieving it, and
+  how did they manage to overcome them.
+- Every user can share a goal that he wants to achieve, and by doing so he
+  commits to doing it. Now, he needs to update on the stages he is doing
+  towards that achievement.
+- Other users that explore the app are able to watch goals of people they
+  don't know. When they see a goal, they can contribute to that goal by
+  offering their knowledge and adding the next step the user should do.
+- Every user should have a way to see all of his achievements, as a past
+  reference to what he already succeded to do, as an inspiration source.
+- When creating a new achievement a user should be able to distinguish between
+  goals and achievements that he already completed. In the dashboard those two
+  should sit in different panels - Goals and Completed Achievements.
+- Exploring should show the user achievements/goals by his recent searches and
+  intrest points.
+
+Pages and functionallity:
+1. Home page:
+  Should see recent changes to goals you are watching and trending achievements
+  that are corrasponding to the genres the user likes.
+  The user should also see 3~5 of his open goals and have a quick way to update
+  them.
+  Also, should have a quick way to add new goal/achievement.
+2. Dashboard:
+  Should be able to create new Achievement, new Goal and to view all the past
+  achievements/goals.
+  Also, should be able to add new or update stages to existing goals.
+3. Explore:
+  Here, the user should get inspired to try and achieve new things.
+  He should be able to see top goals/achievements splitted by genres.
+  Should have very nice visuals to lure the user to try and achieve something
+  new.
+  I want the user to have the option to 'clone' achievements and 'fork' goals.
+
+Models:
+1. User: Name, Password, Email.
+2. Goal: Title, Description, Image, Stages(title, date, desc), Genre
+3. Achievement: Title, Description, Image, Stages(title, date, desc), Genre,
+Completion Date
+4. Genres: Name
+
+TO DO LIST:
+1. Create authentication system
+2. Create add achievement and add goal components - fully functioning
+3. Complete dashboard page
