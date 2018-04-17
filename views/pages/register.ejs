@@ -3,20 +3,28 @@
   <%- include('../includes/bootstrap-stylesheets'); %>
   <link rel="stylesheet" href="assets/stylesheets/register.css">
 
+  <% var messages = getMessages(); %>
+  <% if (messages.notify) { %>
+    <% messages.forEach(function(msg){ %>
+    <h3> <%= msg %> </h3>
+    <% }); %>
+  <% } %>
   <div class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" method="POST" action="/users/register">
       <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Join us!</h1>
+      <label for="inputUsername" class="sr-only">Username</label>
+      <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Username" required autofocus>
       <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <input type="email" id="inputEmail" name="email" class="form-control not-rounded" placeholder="Email address" required>
       <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
       <div class="checkbox mb-3">
         <label>
-          <input type="checkbox" value="remember-me"> Remember me
+          <input type="checkbox" name="remember_me"> Remember me
         </label>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
       <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
     </form>
   </div>
