@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-const flash = require('express-flash-messages');
 
 const port = 3000;
 
@@ -16,7 +15,6 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(flash());
 
 app.use('/', router);
 app.use('/users', users);
